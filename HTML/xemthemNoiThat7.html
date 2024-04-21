@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="./index.html" class="logo"> <i class="fab fa-intercom"></i>Luzo-Star</a>
+    
+            <nav class="navbar">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./gioithieu.html">Giới thiệu</a>
+                <a href="./index-sukien.html">Sự kiện</a>
+                <a href="./sanpham.html">Sản phẩm</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                <a href="./loginform.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+    
+        </header>
+        
+        </section>
+        <div class="maincontent" >
+            <div class="content">
+                <span style="font-size: 28px;">Bàn cụm văn phòng CVP-M13 </span>
+                <!-- <hr> -->
+                <img src="../IMG/NoiThat/Lenovo/ban-cum-van-phong-CVP-M13-1.jpg" alt="" >
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
+                        Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
+                        <p>Bảo hành chính hãng laptop 36 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <p>
+                            Trong môi trường làm việc ngày càng phát triển, 
+                            việc có một không gian làm việc chuyên nghiệp và 
+                            tinh tế là điều cần thiết để tăng cường sự hiệu quả và s
+                            áng tạo. Với cụm bàn làm việc 2-4-6 người CVP-M13, bạn sẽ
+                            có một giải pháp hoàn hảo để tổ chức không gian làm việc của mình. 
+                            Với chất liệu gỗ MDF nhập khẩu Malaysia dày 17mm, sản phẩm này không 
+                            chỉ đảm bảo chất lượng mà còn tạo nên một không gian làm việc đẹp mắt và hiện đại.
+                        </p>
+                        <img src="../IMG/NoiThat/Lenovo/CVP-M13-1.png" alt="lenovo-legion-5-15iah7-i5">
+                        <div class="text1" style="display: none;">
+                            <img src="../IMG/NoiThat/Lenovo/CVP-M13-0.png" alt="lenovo-legion-5-15iah7-i5">
+                    <p>
+                        Cụm bàn làm việc CVP-M12 được chế tạo từ chất liệu gỗ MDF nhập khẩu Malaysia chất lượng cao, 
+                        đảm bảo độ bền và độ chịu lực tối đa. Với độ dày 17mm, bề mặt bàn được gia công một cách tỉ mỉ, 
+                        mịn màng và không thể bị cong vênh hay biến dạng dưới tác động của thời tiết hay sự sử dụng lâu dài. 
+                        Điều này đảm bảo rằng sản phẩm sẽ luôn giữ được vẻ đẹp và chất lượng như mới sau nhiều năm sử dụng.
+                    </p>
+                    <img src="../IMG/NoiThat/Lenovo/CVP-M13-4.png" alt="lenovo-legion-5-15iah7-i5">
+                    <p>
+                        Đặc biệt, cụm bàn này có lỗ luồng dây riêng biệt cho từng vị trí, giúp giữ gọn gàng và sắp 
+                        xếp dây điện một cách ngăn nắp. Bạn cũng có thể sử dụng cụm bàn làm việc này để tổ chức bàn 
+                        họp lớn, tạo nên sự linh hoạt và tiện ích cho không gian văn phòng. 
+                    </p>
+                    
+                    </div>
+                        <button id="show-more">Xem thêm</button>
+                        <script>
+                            var showMoreButton = document.getElementById("show-more");
+                            var hiddenText = document.querySelector(".text1");
+                            var paragraph = document.querySelector(".Paragraph");
+                   
+                            showMoreButton.addEventListener("click", function() {
+                               if (hiddenText.style.display === "none") {
+                                  hiddenText.style.display = "block";
+                                  paragraph.style.height = "auto";
+                                  showMoreButton.textContent = "Thu gọn";
+                               } else {
+                                  hiddenText.style.display = "none";
+                                  paragraph.style.height = "50px";
+                                  showMoreButton.textContent = "Xem thêm";
+                               }
+                            });
+                         </script>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <!-- <hr> -->
+                <div class="box">
+                    <div class="color1">
+                        <a href="#">Xanh</a>
+                    </div>
+                    <div class="color2">
+                        <a href="#">Đen</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Giá tại <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color: red; font-weight: bold; font-size: 20px;">36.190.000₫ *</span>
+                    <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
+                </p>
+                </div>
+            
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                    <div class="box">
+                        <div class="tragop">
+                            <p><a href="#">Mua trả góp 0%<br>
+                                Duyệt hồ sơ trong 5 phút</a></p>
+                        </div>
+                        <div class="tragopquathe">
+                            <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                        </div>
+                    </div>
+                    <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
+                <div class="address">
+                    <p>
+                     Chọn địa chỉ nhận hàng <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select> 
+                     để biết thời gian giao hàng.
+                    </p>
+                </div>
+                <div class="configuration" >
+                    <h2>Thông tin chi tiết sản phẩm</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>1400x600x750mm</td>
+                        </tr>
+                        <tr>
+                            <td>Mặt bàn:</td>
+                            <td>MDF nhập khẩu Malaysia</td>
+                        </tr>
+                        <tr>
+                            <td>Độ dày:</td>
+                            <td>17mm</td>
+                        </tr>
+                        <tr>
+                            <td>Chân bàn:</td>
+                            <td>chân sắt sơn tĩnh điện (sơn trắng/ sơn đen)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fab fa-intercom"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> luzostar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21000505 Trương Công Anh Vĩ</p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

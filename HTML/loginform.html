@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script>
+        $(() => {
+            $(".header").load("./header.html");
+            $(".footer").load("./footer.html");
+        }) 
+    </script>
+</head>
+<body>
+    <div class="container-modal">
+    </div>
+
+    <header class="header">
+        <a href="./index.html" class="logo"> <i class="fab fa-intercom"></i>Luzo-Star</a>
+
+        <nav class="navbar">
+            <a href="./index.html">Trang chủ</a>
+            <a href="./gioithieu.html">Giới thiệu</a>
+            <a href="./index-sukien.html">Sự kiện</a>
+            <a href="./sanpham.html">Sản phẩm</a>
+        </nav>
+
+        <div class="icons">
+
+            <div class="fas fa-bars" id="menu-btn"> </div>
+            
+            <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+            <!-- CART LAYOUT -->
+            <a href="./cart.html">
+                <div class="fas fa-shopping-cart" id=""></div>
+            </a>
+            <a href="./loginform.html">
+                <div class="fas fa-user" id="login-btn"></div>
+            </a>
+
+        </div>
+    </header>
+    <div class="container-btn">
+        <div class="button">
+            <button onclick={handleclickLogin()} class="button-login">LOG IN</button>
+            <a href="./resign.html" class="button-singnin"><button class="button-singnin"> SIGNIN</button></a>
+        </div>
+    </div>
+    <div class="container">
+        
+    </div>
+    <section class="footer">
+    </section>
+    <script src="../JS/login.js"></script>
+</body>
+</html>

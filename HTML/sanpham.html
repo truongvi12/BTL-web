@@ -1,0 +1,193 @@
+<head>
+    <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"/> -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $(".container-modal").load("./modal.html");
+            
+        }) 
+    </script> -->
+</head>
+
+
+<body>
+    <div class="modal" id="modal">
+        <div class="modal__overplay"></div>
+        <div class="modal__body">
+            <div class="modal__inner">
+                <i class="fa-duotone fa-circle-check" style="--fa-primary-color: #ffffff; --fa-secondary-color: #73e896; --fa-secondary-opacity: 1;"></i>
+                <p>Sản phẩm đã được thêm vào giỏ hàng</p>
+            </div>
+        </div>
+    </div>
+    <section>
+        <header class="header">
+            <a href="./index.html" class="logo"> <i class="fab fa-intercom"></i>Luzo-Star</a>
+
+            <nav class="navbar">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./gioithieu.html">Giới thiệu</a>
+                <a href="./index-sukien.html">Sự kiện</a>
+                <a href="./sanpham.html">Sản phẩm</a>
+            </nav>
+
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <!-- CART LAYOUT -->
+                <a href="./cart.html">
+                    <div class="fas fa-shopping-cart" id=""></div>
+                </a>
+                <a href="./loginform.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+
+
+            <!-- Trang chủ -->
+        </header>
+        <article>
+            <div class="box_background">
+                <h1>Các Loại Sản Phẩm Nội Thất</h1>
+            </div>
+        </article>
+
+    </section>
+    <div class="maincontent">
+        <div class="box-content">
+
+            <h2>Nội Thất Văn Phòng <i class="fas fa-fist-raised" style="color: orange;"></i></h2>
+            <div class="box-gaming">
+                <div class="sp1">
+                    <img src="../IMG/NoiThat/Lenovo/ban-cum-van-phong-CVP-M13-1.jpg" alt="Lenovo">
+                    <h3>Bàn Cụm Văn Phòng V1</h3>
+                    <p class="price">Giá: <span>2.190.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat7.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="sp2">
+                    <img src="../IMG/NoiThat/MSI/ban-cum-van-phong-CVP3-8-2.png" alt="Asus">
+                    <h3>Bàn Cụm Văn Phòng V2</h3>
+                    <p class="price">Giá: <span>60.190.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat9.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <h2>Nội Thất Làm Việc Tại Nhà  <i class="fas fa-window-restore" style="color: orange;"></i></h2>
+            <div class="box-gaming">
+                <div class="sp1">
+                    <img src="../IMG/NoiThat/Hp/m1c21.png" alt="HP Pavilion">
+                    <h3>Bàn Làm Việc M2C21
+                    </h3>
+                    <p class="price">Giá: <span>27.690.000</span><sup>đ</sup></p>
+
+                    <button><a href="../HTML/xemthemNoiThat5.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="sp2">
+                    <img src="../IMG/NoiThat/MSI/ban-hoc-sinh-std15-luzo-home.jpg" alt="Modern 14">
+                    <h3>Bàn Gỗ Học Sinh STD15</h3>
+                    <p class="price">Giá: <span>24.990.000</span><sup>đ</sup></p>
+
+                    <button><a href="../HTML/xemthemNoiThat10.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <h2>Nội Thất Nhà Ở <i class="fas fa-briefcase" style="color: orange;"></i></h2>
+            <div class="box-gaming">
+                <div class="sp1">
+                    <img src="../IMG/NoiThat/Asus/thi-cong-tu-bep-nho-TB3-2.png" alt="HP Pavilion">
+                    <h3>Tủ Bếp Dưới Gỗ TB3</h3>
+                    <p class="price">Giá: <span>20.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat2.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="sp2">
+                    <img src="../IMG/NoiThat/Apple Macbook/tu-ke-tivi-TV29-2.jpg" alt="Modern 14">
+                    <h3>Tủ Kệ Tivi LZ TV30</h3>
+                    <p class="price">Giá: <span>30.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemnoiThat8.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <h2>Nội Thất Phòng Khách <i class="fas fa-coins" style="color: orange;"></i></h2>
+            <div class="box-gaming">
+                <div class="sp1">
+                    <img src="../IMG/NoiThat/Lenovo/bobanghepk.jpg" alt="Lenovo">
+                    <h3>Sofa Góc Chữ L AM_G012</h3>
+                    <p class="price">Giá: <span>45.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat6.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="sp2">
+                    <img src="../IMG/NoiThat/Apple Macbook/banghehiendai.png" alt="Acer">
+                    <h3>Sofa Ba Hiện Đại AM-HDB2</h3>
+                    <p class="price">Giá: <span>30.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat1.html">xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+            <h2>Nội Thất Ngoài Trời <i class="fas fa-tv" style="color: orange;"></i></h2>
+            <div class="box-gaming">
+                <div class="sp1">
+                    <img src="../IMG/NoiThat/Apple Macbook/ngoaitroi1.png " alt="Asus-Zenbook">
+                    <h3>Bộ Sofa Đan Dây Ngoài Trời</h3>
+                    <p class="price">Giá: <span>23.990.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat4.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="sp2">
+                    <img src="../IMG/NoiThat/Apple Macbook/ngoaitroi2.png" alt="Asus VivoBook">
+                    <h3>Bộ Sofa Ngoài Trời Kingsbury</h3>
+                    <p class="price">Giá: <span>21.490.000</span><sup>đ</sup></p>
+                    <button><a href="../HTML/xemthemNoiThat3.html">Xem thêm</a></button>
+                    <button onclick="addcart(this)" style="width: 50px;"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fab fa-intercom"> </i>Các nền tảng mạng xã hội: </h3>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"> </a>
+                    <a href="" class="fab fa-instagram"> </a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links"> <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links"> <i class="fas fa-envelope"> </i> luzopstar@gmail.com</a>
+                <a href="" class="links"> <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ
+                    Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21000505 Trương Công Anh Vĩ</p>
+            </div>
+        </div>
+    </section>
+    <script src="./search.js"></script>
+    <script src="../JS/sanpham.js"></script>
+</body>

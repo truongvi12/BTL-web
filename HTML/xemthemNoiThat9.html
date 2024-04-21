@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="./index.html" class="logo"> <i class="fab fa-intercom"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./gioithieu.html">Giới thiệu</a>
+                <a href="./index-sukien.html">Sự kiện</a>
+                <a href="./sanpham.html">Sản phẩm</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                <a href="./loginform.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+    
+        </header>
+    </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Bàn Cụm Văn Phòng CVP3-8</span>
+                <!-- <hr> -->
+                <img src="../IMG/NoiThat/MSI/ban-cum-van-phong-CVP3-8-2.png" alt="MSI">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <!-- <div class="box">
+                    <div class="text">
+                        Hư gì đổi nấy <b>12 tháng</b> tại 3338 siêu thị toàn quốc<br>
+                        (miễn phí tháng đầu tiên) <a href="#"><span>Xem chi tiết.</span></a>
+                        <p>Bộ sản phẩm gồm: Sách hướng dẫn, Thùng máy, <br>
+                        Sạc Laptop Apple ( 61W USB-C ), Cáp ( USB-C 2 m )</p>
+                        <p>Bảo hành chính hãng laptop 24 tháng tại các trung tâm bảo hành hãng
+                        <a href="#"><span>Xem địa chỉ bảo hành.</span></a></p> <br>
+                    </div>
+                </div> -->
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <img src="../IMG/NoiThat/MSI/cvp3-8-0.png" alt="MSI">
+                        <p>
+                            Cụm bàn làm việc văn phòng 3 người CVP3-8 từ LUZO HOME với kết cấu vững chắc, phong cách đơn giản.
+                        </p>
+                        <div class="text1" style="display:none">
+                            <p>
+                                <ul>
+                                    <li> 
+                                        Bàn có thiết kế thông minh, phù hợp với với nhiều phong cách văn phòng
+                                        <img src="../IMG/NoiThat/MSI/cvp3-8-1.png" alt="MSI">
+                                    </li><br>
+                                    <li>
+                                        Bàn làm việc văn phòng của Luzo Home là lựa chọn của rất nhiều tổ chức trên thị trường nội thất nhiều năm nay.
+                                        <img src="../IMG/NoiThat/MSI/cvp3-8-2.png" alt="MSI">
+                                    </li><br>
+                                </ul>
+                            </p>
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                        <script>
+                            var showMoreButton = document.getElementById("show-more");
+                            var hiddenText = document.querySelector(".text1");
+                            var paragraph = document.querySelector(".Paragraph");
+                   
+                            showMoreButton.addEventListener("click", function() {
+                               if (hiddenText.style.display === "none") {
+                                  hiddenText.style.display = "block";
+                                  paragraph.style.height = "auto";
+                                  showMoreButton.textContent = "Thu gọn";
+                               } else {
+                                  hiddenText.style.display = "none";
+                                  paragraph.style.height = "50px";
+                                  showMoreButton.textContent = "Xem thêm";
+                               }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <!-- <hr> -->
+                <div class="box">
+                    <div class="color1">
+                        <a href="#">Xanh</a>
+                    </div>
+                    <div class="color2">
+                        <a href="#">Đen</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Giá tại <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color: red; font-weight: bold; font-size: 20px;">60.990.000₫*</span>
+                    <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
+                </p>
+                </div>
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tragop">
+                        <p><a href="#">Mua trả góp 0%<br>
+                            Duyệt hồ sơ trong 5 phút</a></p>
+                    </div>
+                    <div class="tragopquathe">
+                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                    </div>
+                </div>
+                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
+                <div class="address">
+                    <p>
+                     Chọn địa chỉ nhận hàng <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select> 
+                     để biết thời gian giao hàng.
+                </p>
+                </div>
+                <div class="configuration">
+                    <h2>Thông tin chi tiết của sản phẩm</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>như hình (có nhận thay đổi kích thước theo yêu cầu)</td>
+                        </tr>
+                        <tr>
+                            <td>Mặt bàn:</td>
+                            <td>MDF nhập khẩu Malaysia dày 17mm</td>
+                        </tr>
+                        <tr>
+                            <td>Chân bàn:</td>
+                            <td>chân sắt sơn tĩnh điện (sơn trắng/ sơn đen)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-laptop"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> luzostar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21000505 Trương Công Anh Vĩ</p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

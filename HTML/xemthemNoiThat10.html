@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="./index.html" class="logo"> <i class="fab fa-intercom"></i>Laptop-Star</a>
+    
+            <nav class="navbar">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./gioithieu.html">Giới thiệu</a>
+                <a href="./index-sukien.html">Sự kiện</a>
+                <a href="./sanpham.html">Sản phẩm</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                <a href="./loginform.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+    
+        </header>
+    </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Bàn gỗ học sinh kèm kệ sách và tủ STD15</span>
+                <!-- <hr> -->
+                <img src="../IMG/NoiThat/MSI/ban-hoc-sinh-std15-luzo-home.jpg" alt="MSI">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <p>Khi đến việc lựa chọn bàn học cho con cái hoặc chỗ làm việc tại nhà, 
+                            không chỉ cần xem xét tính tiện nghi, mà còn cần xem xét tính thẩm 
+                            mỹ và chất lượng của sản phẩm. Bàn học sinh STD15 của Luzo Home là 
+                            lựa chọn hoàn hảo, kết hợp giữa sự đẹp mắt và độ bền, cung cấp một 
+                            không gian học tập hoàn chỉnh cho mọi người.
+                        </p>
+                        <img src="../IMG/NoiThat/MSI/banhocsinh2.png" alt="MSI">
+                        <div class="text1" style="display:none">
+                                <ul>
+                                    <li> Bàn học sinh STD15 là sự kết hợp tinh tế giữa chất liệu gỗ MDF nhập khẩu từ 
+                                        Malaysia và chân sắt sơn tĩnh điện. Chất liệu gỗ MDF đảm bảo độ bền và chịu 
+                                        lực tốt, trong khi chân sắt sơn tĩnh điện giúp sản phẩm trở nên cứng cáp và 
+                                        ổn định. Sự kết hợp này tạo ra một sản phẩm đẹp và bền bỉ theo thời gian.
+                                        <img src="../IMG/NoiThat/MSI/banhocsinh0.png" alt="MSI">
+                                    </li><br>
+                                        
+                                    <li>
+                                        Bàn học STD15 đi kèm với một hệ thống ngăn kéo lớn, giúp bạn tổ chức và lưu 
+                                        trữ sách giáo trình, tài liệu học tập và các vật dụng cá nhân dễ dàng. Không 
+                                        gian lưu trữ lớn của sản phẩm cho phép bạn giữ gọn gàng mọi thứ, từ sách vở 
+                                        đến thiết bị học tập.
+                                        <img src="../IMG/NoiThat/MSI/banhocsinh1.png" alt="MSI">
+                                    </li><br>
+                                </ul>  
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                    <script>
+                        var showMoreButton = document.getElementById("show-more");
+                        var hiddenText = document.querySelector(".text1");
+                        var paragraph = document.querySelector(".Paragraph");
+               
+                        showMoreButton.addEventListener("click", function() {
+                           if (hiddenText.style.display === "none") {
+                              hiddenText.style.display = "block";
+                              paragraph.style.height = "auto";
+                              showMoreButton.textContent = "Thu gọn";
+                           } else {
+                              hiddenText.style.display = "none";
+                              paragraph.style.height = "50px";
+                              showMoreButton.textContent = "Xem thêm";
+                           }
+                        });
+                     </script>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <!-- <hr> -->
+                <div class="box">
+                    <div class="color1">
+                        <a href="#">Xanh</a>
+                    </div>
+                    <div class="color2">
+                        <a href="#">Đen</a>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Giá tại <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select>
+                </p>
+                <p>
+                    <span style="color: red; font-weight: bold; font-size: 20px;">15.990.000₫*</span>
+                    <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); border-radius: 3px; ">Trả góp 0%</span>
+                </p>
+                </div>
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="tragop">
+                        <p><a href="#">Mua trả góp 0%<br>
+                            Duyệt hồ sơ trong 5 phút</a></p>
+                    </div>
+                    <div class="tragopquathe">
+                        <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                    </div>
+                </div>
+                <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span><hr>
+                <div class="address">
+                    <p>
+                     Chọn địa chỉ nhận hàng <select name="" id="">
+                    <option name="use" value="">Hồ Chí Minh</option>
+                    <option name="use" value="">Hà Nội</option>
+                    <option name="use" value="">Đà Nẵng</option>
+                    <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                    <option name="use" value="">Bạc Liêu</option>
+                    <option name="use" value="">Bắc Giang</option>
+                    </select> 
+                     để biết thời gian giao hàng.
+                </p>
+                </div>
+                <div class="configuration">
+                    <h2>Thông tin chi tiết của sản phẩm</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>D120xR50xC75cm</td>
+                        </tr>
+                        <tr>
+                            <td>Chất liệu:</td>
+                            <td>MDF nhập khẩu Malaysia dày 17mm</td>
+                        </tr>
+                        <tr>
+                            <td>Ổ cứng:</td>
+                            <td>
+                                256 GB SSD NVMe PCIe (Có thể tháo ra, lắp thanh khác tối đa 2 TB)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Nếu lấy hóa đơn đỏ (+VAT 10%)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Có nhận tùy chỉnh kích thước</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fab fa-intercom"></i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> luzostar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21000505 Trương Công Anh Vĩ</p>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>

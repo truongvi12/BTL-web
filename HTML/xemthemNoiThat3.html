@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 15px 24px;
+            background: orange;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+            transition: all 0.5s linear;
+            margin-left: 250px;
+            cursor: pointer;
+        }
+        button:hover{
+            background: rgb(95, 92, 92);
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/xemthem.css">
+    <script src="https://kit.fontawesome.com/2b19f5258f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a href="./index.html" class="logo"> <i class="fab fa-intercom"></i>Luzo-Star</a>
+    
+            <nav class="navbar">
+                <a href="./index.html">Trang chủ</a>
+                <a href="./gioithieu.html">Giới thiệu</a>
+                <a href="./index-sukien.html">Sự kiện</a>
+                <a href="./sanpham.html">Sản phẩm</a>
+            </nav>
+    
+            <div class="icons">
+                <div class="fas fa-bars" id="menu-btn"> </div>
+                <div class="fas fa-search" onclick={handleclicksearch()} id="search-btn"> </div>
+                <div class="fas fa-shopping-cart" id="cart-btn"> </div>
+                <a href="./loginform.html">
+                    <div class="fas fa-user" id="login-btn"></div>
+                </a>
+            </div>
+    
+        </header>
+        <div class="event">
+    
+        </div>
+    </section>
+        <div class="maincontent">
+            <div class="content">
+                <span style="font-size: 28px;">Bộ Sofa Ngoài Trời Kingsbury</span>
+                <!-- <hr> -->
+                <img src="../IMG/NoiThat/Apple Macbook/ngoaitroi2.png" alt="">
+                <a href="# " target="_parent"><p>Xem tất cả ảnh</p></a>
+                <div class="information">
+                    <div class="Paragraph">
+                        <h3>Thông tin sản phẩm</h3>
+                        <p>
+
+                        </p>
+                        <img src="../IMG/NoiThat02/bongoaitroi1.png" alt="">
+                        <div class="text1" style="display: none;">
+                        <p>
+                            Bộ Sofa Ngoài Trời Kingsbury được làm bằng gỗ tếch bạch 
+                            đàn FSC chất lượng cao cho khu vườn, sân hiên hoặc hiên nhà 
+                            của bạn, chịu được thời tiết khắc nghiệt. Bộ sân vườn với 
+                            thiết kế hiện đại, thanh lịch và vượt thời gian đây chính 
+                            là sự lựa chọn tuyệt vời cho bữa ăn ngoài trời trong vườn, 
+                            trên sân thượng hoặc trong sân vườn. 
+                        </p>
+                    <img src="../IMG/NoiThat02/bongoaitroi2.png" alt="">
+                        </div>
+                        <button id="show-more">Xem thêm</button>
+                        <script>
+                            var showMoreButton = document.getElementById("show-more");
+                            var hiddenText = document.querySelector(".text1");
+                            var paragraph = document.querySelector(".Paragraph");
+                   
+                            showMoreButton.addEventListener("click", function() {
+                               if (hiddenText.style.display === "none") {
+                                  hiddenText.style.display = "block";
+                                  paragraph.style.height = "auto";
+                                  showMoreButton.textContent = "Thu gọn";
+                               } else {
+                                  hiddenText.style.display = "none";
+                                  paragraph.style.height = "50px";
+                                  showMoreButton.textContent = "Xem thêm";
+                               }
+                            });
+                         </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <!-- <hr> -->
+                    <div class="box">
+                        <div class="color1">
+                            <a href="#">Xanh</a>
+                        </div>
+                        <div class="color2">
+                            <a href="#">Đen</a>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            Giá tại: <select name="" id="">
+                        <option name="use" value="">Hồ Chí Minh</option>
+                        <option name="use" value="">Hà Nội</option>
+                        <option name="use" value="">Đà Nẵng</option>
+                        <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                        <option name="use" value="">Bạc Liêu</option>
+                        <option name="use" value="">Bắc Giang</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span style="color: red; font-weight: bold; font-size: 20px;">21.490.000₫ *</span>
+                         <span style="text-decoration: line-through; color: rgb(107, 106, 105); font-size: 20px;">40.590.000đ</span> 
+                        <span style="background: rgb(204, 201, 201); text-align: center; border: 0.5px solid rgb(191, 188, 188); ">Trả góp 0%</span>
+                    </p>
+                    </div>
+            <div class="sidebar-content">
+                <div class="box">
+                    <div class="buynow-sidebar-content">
+                        <p><a href="#">Mua Ngay</a></p>
+                    </div>
+                    <div class="Cart-sidebar-content">
+                        <p><a href="#">Thêm Giỏ Hàng</a></p>
+                    </div>
+                </div>
+                    <div class="box">
+                        <div class="tragop">
+                            <p><a href="#">Mua trả góp 0%<br>
+                                Duyệt hồ sơ trong 5 phút</a></p>
+                        </div>
+                        <div class="tragopquathe">
+                            <p><a href="#">Mua trả góp qua thẻ Visa, Mastercard, JCB, Amex</a></p>
+                        </div>
+                    </div><hr>
+                    <span style="text-align: center;"><p>Gọi đặt mua <span style="color: rgb(54, 26, 216);">1800.1060</span> (7:30 - 22:00)</p></span>
+                <div class="address">
+                    <p>
+                        Chọn địa chỉ nhận hàng <select name="" id="">
+                        <option name="use" value="">Hồ Chí Minh</option>
+                        <option name="use" value="">Hà Nội</option>
+                        <option name="use" value="">Đà Nẵng</option>
+                        <option name="use" value="">Bà Rịa-Vũng Tàu</option>
+                        <option name="use" value="">Bạc Liêu</option>
+                        <option name="use" value="">Bắc Giang</option>
+                        </select> 
+                        để biết thời gian giao hàng.
+                    </p>
+                </div>                
+                <div class="configuration">
+                    <h2>Thông tin chi tiết của sản phẩm</h2>
+                    <table cellpadding="10">
+                        <tr>
+                            <td>Chất liệu:</td>
+                            <td>gỗ bạch đàn</td>
+                        </tr>
+                        <tr>
+                            <td>Màu sắc:</td>
+                            <td>như hình </td>
+                        </tr>
+                        <tr>
+                            <td>Kích thước:</td>
+                            <td>
+                                <li>Ghế sofa: 80,7x127,2x74,3 cm.</li>
+                                <li>Ghế đơn: 71,2x80,5x74,3 cm.</li>
+                                <li>Bàn: 49,3x97,3x33,45 cm.</li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Bảo hành:</td>
+                            <td>12 tháng</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fab fa-intercom"> </i>Các nền tảng mạng xã hội: </h3>
+                <p>Những thông tin, sự kiện, sản phẩm mới nhất sẽ được cập nhật tại các trang:</p>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f" ></a>
+                    <a href="" class="fab fa-twitter" > </a>
+                    <a href="" class="fab fa-instagram" > </a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Thông tin liên hệ: </h3>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +0123785660</a>
+                <a href="" class="links" > <i class="fas fa-phone"> </i> +123456789</a>
+                <a href="" class="links" > <i class="fas fa-envelope"> </i> luzostar@gmail.com</a>
+                <a href="" class="links" > <i class="fas fa-map-marker-alt"> </i> 12 Nguyễn Văn Bảo, p4, Gò Vấp, tp Hồ Chí Minh</a>
+            </div>
+            <div class="box">
+                <h3> <i class="fas fa-users"></i> Danh sách thành viên: </h3>
+                <p>21000505 Trương Công Anh Vĩ</p>
+            </div>
+        </div>
+   </section>
+   <script src="./search.js"></script>
+</body>
+</html>
